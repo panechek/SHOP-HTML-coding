@@ -202,10 +202,19 @@ p {
     height: 100%;
 }
 
+.banner_content {
+    display: flex;
+}
+
+.banner_stick {
+    width: 12px;
+    background-color: #f16d7f;
+    margin-right: 12px;
+}
+
 .banner__text {
-    border-left: solid 12px #f16d7f;
     padding-left: 12px;
-    align-self: center;
+    */ align-self: center;
     color: #222222;
     font-family: "Lato Black";
     font-size: 40px;
@@ -230,29 +239,33 @@ p {
     letter-spacing: 1px;
 }
 
-.content__flex {
+.offer {
+    margin-bottom: 100px;
+}
+
+.offer__flex {
     display: flex;
     margin-top: 98px;
 }
 
-.content__left {
+.offer__left {
     display: flex;
     flex-direction: column;
     margin-right: 21px;
 }
 
-.content__right {
+.offer__right {
     display: flex;
     flex-direction: column;
 }
 
-.content_items {
+.offer_items {
     position: relative;
     flex-grow: 1;
     margin-bottom: 20px;
 }
 
-.content_text {
+.offer_text {
     position: absolute;
     color: #222222;
     font-family: "Lato Black";
@@ -266,8 +279,81 @@ p {
     letter-spacing: 0.45px;
 }
 
-.content_text_color {
+.offer_text_color {
     color: #f16d7f;
     font-size: 30px;
     letter-spacing: 0.75px;
 }
+
+.feature_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.featured_title {
+    text-align: center;
+    margin-bottom: 16px;
+    color: #222222;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+}
+
+.featured_title_text {
+    text-align: center;
+    color: #9f9f9f;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    margin-bottom: 59px;
+}
+
+.featured_flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 39px;
+}
+
+.featured_card {
+    width: 261px;
+    height: 342px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 39px;
+}
+
+.items_name {
+    color: #222222;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-left: 14px;
+    padding-top: 20px;
+    padding-bottom: 17px;
+}
+
+.items_price {
+    color: #f16d7f;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 14px;
+}
+
+.featured_button {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.4px;
+    padding: 18px 24px;
+    background-color: #f16d7f;
+    margin-top: 39px;
+    align-self: center;
+}
+
+.featured_button::after {
+    content: url(images/featured_button.png);
+    margin-left: 9px;
