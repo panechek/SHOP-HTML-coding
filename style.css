@@ -167,7 +167,10 @@ p {
 .nav {
     display: flex;
     justify-content: center;
-    margin-bottom: 22px;
+    align-items: center;
+    margin-bottom: 19px;
+    padding-top: 16px;
+    border-top: 1px solid #ececec;
 }
 
 .nav__main {
