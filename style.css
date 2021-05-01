@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: "Lato";
+    font-family: "Lato", sans-serif;
 }
 
 a {
@@ -49,7 +49,7 @@ p {
     align-self: center;
 }
 
-.header__seach {
+.header__search {
     color: #222222;
     font-size: 14px;
     font-weight: 300;
@@ -60,7 +60,7 @@ p {
     display: flex;
 }
 
-.header_button_seach {
+.header_button_search {
     padding: 2px 8px 2px 12px;
     border-radius: 3px 0 0 3px;
     border: 1px solid #e6e6e6;
@@ -70,7 +70,7 @@ p {
     box-sizing: border-box;
 }
 
-.seach {
+.search {
     border-radius: 0 3px 3px 0;
     border: 1px solid #e6e6e6;
     background-color: #ffffff;
@@ -82,12 +82,12 @@ p {
     border-left: 0;
 }
 
-.header_button_seach::after {
+.header_button_search::after {
     content: url(images/seach_down.png);
     padding-left: 8px;
 }
 
-.textarea__seach {
+.textarea__search {
     border-style: none;
     resize: none;
     width: 100%;
@@ -110,7 +110,7 @@ p {
     color: #a4a4a4;
 }
 
-.button__seach {
+.button__search {
     height: 36px;
     width: 38px;
     border-style: none;
@@ -453,7 +453,20 @@ p {
 }
 
 .footer_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_brand {
     height: 350px;
+    display: flex;
+    flex-direction: column;
+    width: 427px;
+}
+
+.footer_info {
+    display: flex;
+    justify-content: space-around;
 }
 
 .copy {
@@ -464,13 +477,12 @@ p {
 .copy_flex {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .copyright_text {
     color: #7a7a7a;
     font-size: 16px;
     font-weight: 400;
-    line-height: 42px;
     letter-spacing: 0.4px;
+    padding: 33px;
 }
