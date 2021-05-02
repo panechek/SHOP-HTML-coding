@@ -170,26 +170,101 @@ p {
 .nav {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 19px;
-    padding-top: 16px;
     border-top: 1px solid #ececec;
 }
 
 .nav__main {
     display: flex;
-    justify-content: space-between;
-    width: 680px;
+    justify-content: center;
     list-style-type: none;
 }
 
 .nav_list {
+    position: relative;
+}
+
+.nav_list:hover .nav-box {
+    display: flex;
+}
+
+.nav_link {
     text-decoration: none;
+    display: block;
+    padding: 20px 25px;
     color: #222222;
     font-size: 14px;
     font-weight: 700;
-    line-height: 26px;
     text-transform: uppercase;
+}
+
+.nav-box {
+    position: absolute;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    display: none;
+    top: 47px;
+}
+
+.nav-box::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: -7px;
+    left: 34px;
+    transform: rotate(45deg);
+    border-top: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+    background-color: #fff;
+}
+
+.item_flex {
+    display: flex;
+    flex-direction: column;
+    width: 235px;
+    margin-right: 46px;
+}
+
+.item_flex:last-of-type {
+    margin-right: 0;
+}
+
+.item_heading {
+    border-bottom: 1px solid #e8e8e8;
+    color: #232323;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.item_link {
+    color: #646464;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    line-height: 28px;
+}
+
+.item_link:hover {
+    color: #f16d7f;
+}
+
+.last:hover .nav-box {
+    right: 0;
+}
+
+.nav_img {
+    /* position: absolute;
+    right: 20px;
+    bottom: 20px; */
 }
 
 .banner {
@@ -318,8 +393,6 @@ p {
 }
 
 .product_card {
-    width: 261px;
-    height: 342px;
     display: flex;
     flex-direction: column;
     margin-bottom: 39px;
