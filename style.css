@@ -490,17 +490,48 @@ p {
     margin-bottom: 66px;
 }
 
-.subscribe {
+.communication {
     background-image: url(images/subscribe_back.jpg);
     background-repeat: no-repeat;
-    height: 438px;
     background-position: center;
     margin-top: 97px;
     margin-bottom: 109px;
+    /* background-blend-mode: lighten; */
 }
 
-.subscribe_flex {
+.communication_flex {
     height: 100%;
+    display: flex;
+}
+
+figure {
+    display: flex;
+    width: 50%;
+    border-right: 1px solid #fff;
+    height: 438px;
+    align-items: center;
+}
+
+.comment_img {
+    width: 83px;
+    height: 83px;
+    border-radius: 50px;
+    margin-right: 28px;
+}
+
+.comment {
+    width: 386px;
+}
+
+.comment_text {
+    color: #222224;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 26px;
+    text-align: left;
+    letter-spacing: 0.4px;
+    margin-bottom: 19px;
 }
 
 .feature_info_items {
