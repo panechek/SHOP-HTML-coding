@@ -267,6 +267,15 @@ p {
     bottom: 20px; */
 }
 
+.nav_last {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav_last_column {
+    flex: 1;
+}
+
 .banner {
     height: 665px;
     background-color: #e8e8e8;
