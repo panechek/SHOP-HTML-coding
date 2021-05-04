@@ -75,11 +75,22 @@ summary {
     letter-spacing: 0.35px;
 }
 
-summary::marker {
-    position: absolute;
-    left: -100px;
+details summary {
     color: #838383;
-    display: none;
+    list-style: none;
+}
+
+details summary::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 4px 0 4px;
+    border-color: #838383 transparent transparent transparent;
 }
 
 .search {
@@ -585,17 +596,14 @@ summary::marker {
     border: 1px solid #f16d7f;
 }
 
-
 .feature_flex {
     display: flex;
     height: 529px;
     background-color: #222224;
-    margin-top: 113px;
 }
 
 .feature_banner {
     position: relative;
-
 }
 
 .feature_text {
@@ -780,15 +788,6 @@ button:focus {
     color: #f16d7f;
 }
 
-
-
-
-
-
-.feature_info_items {
-    /* margin-bottom: 62px; */
-}
-
 .feature_info_title {
     color: #fbfbfb;
     font-size: 20px;
@@ -818,7 +817,7 @@ button:focus {
 
 .footer_flex {
     display: flex;
-    justify-content: space-between;
+    margin-top: 109px;
 }
 
 .footer_brand {
@@ -826,21 +825,57 @@ button:focus {
     display: flex;
     flex-direction: column;
     width: 427px;
+    margin-right: 64px
+}
+
+.footer_text {
+    width: 427px;
+    color: #898989;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.35px;
+    padding-bottom: 30px;
 }
 
 .footer_info {
     display: flex;
     justify-content: space-around;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.footer_info_item p {
+    color: #f16d7f;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0.45px;
+    margin-bottom: 14px;
+}
+
+.footer_info_item li {
+    list-style-type: none;
+}
+
+.footer_info_item a {
+    color: #898989;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    line-height: 42px;
 }
 
 .copy {
-    height: 79px;
     background-color: #e6e6e6;
 }
 
 .copy_flex {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 79px;
 }
 
 .copyright_text {
@@ -848,5 +883,20 @@ button:focus {
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.4px;
-    padding: 33px;
+}
+
+.url {
+    display: flex;
+    justify-content: space-between;
+    width: 191px;
+}
+
+.url i {
+    color: #ffffff;
+    font-size: 32px;
+}
+
+.url i:hover {
+    background-color: #fff;
+    color: #f16d7f;
 }
