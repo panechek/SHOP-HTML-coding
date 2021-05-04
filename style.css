@@ -900,3 +900,125 @@ button:focus {
     background-color: #fff;
     color: #f16d7f;
 }
+
+.breadcrumb {
+    height: 148px;
+    background-color: #f8f3f4;
+}
+
+.product_slider {
+    height: 777px;
+    border: 1px solid #eaeaea;
+    background-color: #f7f7f7;
+}
+
+.item-slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-slider i {
+    color: #838383;
+}
+
+.description {
+    height: 730px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    margin-top: -56px;
+    margin-bottom: 119px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description h4 {
+    color: #f16d7f;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 73px;
+    margin-bottom: 14px;
+}
+
+.product_text {
+    color: #4d4d4d;
+    font-family: "Lato Black";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.slider-point {
+    display: flex;
+    width: 147px;
+    height: 1px;
+    border: 1px solid #eaeaea;
+}
+
+.slider-link {
+    flex-grow: 1;
+}
+
+.pink {
+    background-color: #ef5b70;
+    height: 3px;
+    align-self: center;
+}
+
+
+.description h3 {
+    color: #4d4d4d;
+    font-family: "Lato Black";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 17px;
+    margin-bottom: 67px;
+}
+
+.description p {
+    width: 619px;
+    color: #5e5e5e;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.production {
+    display: flex;
+    width: 642px;
+}
+
+.production p {
+    color: #b9b9b9;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.production p b {
+    color: #2f2f2f;
+}
+
+.description h2 {
+    color: #ef5b70;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 37px;
+    padding-bottom: 43px;
+    width: 619px;
+    border-bottom: 1px solid #eaeaea;
+}
