@@ -62,6 +62,8 @@ details {
     background-color: #cdcdcc;
     background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
     box-sizing: border-box;
+    position: relative;
+
 }
 
 summary {
@@ -73,10 +75,11 @@ summary {
     letter-spacing: 0.35px;
 }
 
-summary::-webkit-details-marker {
+summary::marker {
     position: absolute;
     left: -100px;
     color: #838383;
+    display: none;
 }
 
 .search {
@@ -89,11 +92,18 @@ summary::-webkit-details-marker {
     background-color: #ffffff;
     width: 236px;
     z-index: 1;
-    left: 180px;
-    top: 77px;
+    top: 33px;
     border-bottom: 1px solid #e8e8e8;
+    left: -1px;
 }
 
+.search_menu {
+    margin-bottom: 30px;
+}
+
+.search_menu:last-child {
+    margin-bottom: 0;
+}
 
 .search_menu p {
     color: #232323;
@@ -103,8 +113,10 @@ summary::-webkit-details-marker {
     letter-spacing: 0.35px;
     padding-bottom: 9px;
     width: 100%;
-    border-bottom: #381b1b;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 8px;
 }
+
 
 .search_menu a {
     text-decoration: none;
@@ -113,11 +125,40 @@ summary::-webkit-details-marker {
     font-weight: 400;
     letter-spacing: 0.35px;
     line-height: 28px;
+    display: block;
 }
 
 .search_menu ul li {
     list-style-type: none;
     display: block;
+}
+
+.header__search input {
+    width: 280px;
+    height: 38px;
+    border: 1px solid #e6e6e6;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-left: none;
+    padding-left: 16px;
+}
+
+.header__search button {
+    border: 1px solid #e6e6e6;
+    height: 38px;
+    width: 38px;
+    content: "far fa-search";
+    outline: none;
+    background-color: #fff;
+    border-left: 0;
+    border-radius: 0 3px 3px 0;
+
+}
+
+.header__search button i {
+    color: #a4a4a4;
+
+    ;
 }
 
 .header__name {
@@ -403,59 +444,110 @@ summary::-webkit-details-marker {
     letter-spacing: 0.75px;
 }
 
-.product_content {
+.product_title {
     display: flex;
     flex-direction: column;
-}
-
-.product_title {
-    text-align: center;
-    margin-bottom: 16px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
     color: #222222;
+    font-family: 'Lato', sans-serif;
     font-size: 30px;
     font-weight: 700;
     letter-spacing: 0.75px;
 }
 
-.product_title_text {
-    text-align: center;
+.product_title p {
     color: #9f9f9f;
+    font-family: 'Lato', sans-serif;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.35px;
-    margin-bottom: 59px;
+    margin-top: 16px;
 }
 
+
 .product_flex {
+    margin-top: 60px;
+    margin-bottom: 60px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 39px;
+    justify-content: space-between;
 }
 
 .product_card {
+    position: relative;
+    width: 263px;
+    margin-bottom: 40px;
+}
+
+.product_card:hover .box-add {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 39px;
+}
+
+.product_card:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+
+.item {
+    width: 263px;
+    display: block;
+    text-decoration: none;
+}
+
+.item-img {
+    width: 100%;
+    height: 280px;
+}
+
+.product_card:hover .item-img {
+    filter: brightness(50%);
+}
+
+.product-text-box {
+    padding: 20px 15px;
 }
 
 .items_name {
     color: #222222;
-    font-family: Lato;
     font-size: 13px;
     font-weight: 400;
     text-transform: uppercase;
-    padding-left: 14px;
-    padding-top: 20px;
-    padding-bottom: 17px;
+    margin-bottom: 15px;
 }
 
 .items_price {
     color: #f16d7f;
-    font-family: Lato;
     font-size: 16px;
     font-weight: 700;
-    padding-left: 14px;
+    text-transform: uppercase;
+}
+
+.box-add {
+    position: absolute;
+    top: 98px;
+    display: none;
+    justify-content: center;
+    width: 100%;
+}
+
+.add {
+    border: 1px solid #ffffff;
+    padding: 8px 12px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.add:hover {
+    box-shadow: 0 0 10px #fff;
+}
+
+.add-img {
+    margin-right: 7px;
 }
 
 .product_button {
