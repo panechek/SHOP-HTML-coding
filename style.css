@@ -49,73 +49,75 @@ p {
 }
 
 .header__search {
-    color: #222222;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 32px;
-    letter-spacing: 0.35px;
-    align-self: center;
-    padding-left: 37px;
     display: flex;
+    align-items: center;
 }
 
-.header_button_search {
-    padding: 2px 8px 2px 12px;
+details {
+    padding: 9px;
+    width: 87px;
+    height: 38px;
     border-radius: 3px 0 0 3px;
     border: 1px solid #e6e6e6;
     background-color: #cdcdcc;
     background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
-    height: 38px;
     box-sizing: border-box;
+}
+
+summary {
+    position: relative;
+    color: #222222;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.35px;
+}
+
+summary::-webkit-details-marker {
+    position: absolute;
+    left: -100px;
+    color: #838383;
 }
 
 .search {
-    border-radius: 0 3px 3px 0;
-    border: 1px solid #e6e6e6;
-    background-color: #ffffff;
-    width: 317px;
-    height: 38px;
     display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-    border-left: 0;
-}
-
-.header_button_search::after {
-    content: url(images/seach_down.png);
-    padding-left: 8px;
-}
-
-.textarea__search {
-    border-style: none;
-    resize: none;
-    width: 100%;
-    outline: none;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 32px;
-    letter-spacing: 0.35px;
-    padding-left: 16px;
-    padding-top: 3px;
-    font-family: "Lato";
-    overflow: hidden;
-}
-
-::placeholder {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 32px;
-    letter-spacing: 0.35px;
-    color: #a4a4a4;
-}
-
-.button__search {
-    height: 36px;
-    width: 38px;
-    border-style: none;
-    border-left: 1px solid #e6e6e6;
+    flex-direction: column;
+    position: absolute;
+    padding: 15px;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
     background-color: #ffffff;
-    box-sizing: border-box;
+    width: 236px;
+    z-index: 1;
+    left: 180px;
+    top: 77px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+
+.search_menu p {
+    color: #232323;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.35px;
+    padding-bottom: 9px;
+    width: 100%;
+    border-bottom: #381b1b;
+}
+
+.search_menu a {
+    text-decoration: none;
+    color: #4f4f4f;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    line-height: 28px;
+}
+
+.search_menu ul li {
+    list-style-type: none;
+    display: block;
 }
 
 .header__name {
