@@ -1022,3 +1022,19 @@ button:focus {
     width: 619px;
     border-bottom: 1px solid #eaeaea;
 }
+
+.choice {
+    display: flex;
+    margin-top: 63px;
+    width: 537px;
+    justify-content: space-between;
+}
+
+.choice-link label {
+    color: #2f2f2f;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+}
