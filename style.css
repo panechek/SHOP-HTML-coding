@@ -7,6 +7,17 @@ body {
     font-family: "Lato", sans-serif;
 }
 
+.page {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+}
+
 a {
     text-decoration: none;
 }
@@ -14,6 +25,10 @@ a {
 p {
     margin-block-start: 0em;
     margin-block-end: 0em;
+}
+
+li {
+    list-style-type: none;
 }
 
 .container {
@@ -901,7 +916,7 @@ button:focus {
     color: #f16d7f;
 }
 
-.breadcrumb {
+.breadcrumbs {
     height: 148px;
     background-color: #f8f3f4;
 }
@@ -1094,7 +1109,7 @@ button:focus {
     text-transform: uppercase;
 }
 
-.breadcrumb-text p {
+.breadcrumb-link {
     text-transform: uppercase;
     color: #636363;
     font-family: "Lato Light";
@@ -1102,8 +1117,11 @@ button:focus {
     font-size: 14px;
 }
 
-.breadcrumb-text p span {
-    font-weight: 700;
+.breadcrumb-list {
+    display: flex;
+}
+
+.breadcrumb-link:hover {
     color: #f16d7f;
-    font-size: 14px;
+    font-weight: 700;
 }
