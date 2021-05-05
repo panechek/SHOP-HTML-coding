@@ -16,7 +16,7 @@
         <div class="container">
             <div class="header__flex">
                 <div class="header__left">
-                    <a class="header__logo" href="#">
+                    <a class="header__logo" href="index.html">
                         <img class="logo" src="images/logo.png" alt="logo">
                         <p class="header__name">bran<span class="name_item">d</span> </p>
                     </a>
@@ -337,7 +337,10 @@
     </nav>
     <div class="breadcrumb">
         <div class="container">
-
+            <div class="breadcrumb-text">
+                <h1>New Arrivals </h1>
+                <p>Home / Men / <span>New Arrivals</span> </p>
+            </div>
         </div>
     </div>
     <div class="product_slider">
@@ -365,29 +368,38 @@
                     <p>DESIGNER: <b>BINBURHAN</b></p>
                 </div>
                 <h2>$561</h2>
+            <form action="#">
+                <div class="choice">
+                    <div class="choice-link">
+                        <label for="color">CHOOSE COLOR</label><br>
+                        <input id="color" list="dl_color">
+                        <datalist id="dl_color">
+                            <option label="black" value="black"></option>
+                            <option label="red" value="red"></option>
+                            <option label="green" value="green"></option>
+                    </div>
+                    <div class="choice-link">
+                        <label for="size">CHOOSE SIZE</label><br>
+                        <input id="size" list="dl_size">
+                        <datalist id="dl_size">
+                            <option label="S" value="S"></option>
+                            <option label="M" value="M"></option>
+                            <option label="L" value="L"></option>
+                            <option label="XL" value="XL"></option>
+                        </datalist>
+                    </div>
+                    <div class="choice-link">
+                        <label for="QUANTITY">QUANTITY</label><br>
+                        <input id="QUANTITY" type="number" required="" min="1" max="10">
+                    </div>
+                </div>
+                <div class="choice-but">
+                    <button class="choice-button" type="submit"><img src="images/choice-button.png" alt="choice-button">
+                        <p>Add to Cart</p></button>
+                    
+                </div>
+            </form>
             
-            <div class="choice">
-                <div class="choice-link">
-                    <label for="color">CHOOSE COLOR</label><br>
-                    <input id="color" type="color">
-                </div>
-                <div class="choice-link">
-                    <label for="fruit">CHOOSE SIZE</label><br>
-                    <input id="fruit" list="dl_fruits">
-                    <datalist id="dl_fruits">
-                        <option label="Яблоко" value="apple"></option>
-                        <option label="Ананас" value="ananas"></option>
-                        <option label="Абрикос" value="apricot"></option>
-                        <option label="Арбуз" value="watermelon"></option>
-                        <option label="Авокадо" value="avocado"></option>
-                        <option label="Апельсин" value="Orange"></option>
-                    </datalist>
-                </div>
-                <div class="choice-link">
-                    <label for="age">QUANTITY<em>*</em></label><br>
-                    <input id="age" type="number" required="" min="1" max="10">
-                </div>
-            </div>
             </div>
         </div>
     </section>    
@@ -401,7 +413,7 @@
                 <div class="product_flex">
                     <div class="product_card">
                         <a href="single-page.html" class="item">
-                            <img class="item-img" src="images/item1.png" alt="product">
+                            <div class="single_page_img"><img src="images/item9.png" alt="product"></div>
                             <div class="product-text-box">
                                 <p class="items_name">Mango  People  T-shirt</p>
                                 <p class="items_price">$52.00</p>
@@ -413,7 +425,7 @@
                     </div>
                     <div class="product_card">
                         <a href="single-page.html" class="item">
-                            <img class="item-img" src="images/item2.png" alt="product">
+                            <div class="single_page_img"><img src="images/item10.png" alt="product"></div>
                             <div class="product-text-box">
                                 <p class="items_name">Mango  People  T-shirt</p>
                                 <p class="items_price">$52.00</p>
@@ -425,7 +437,7 @@
                     </div>
                     <div class="product_card">
                         <a href="single-page.html" class="item">
-                            <img class="item-img" src="images/item3.png" alt="product">
+                            <div class="single_page_img"><img src="images/item11.png" alt="product"></div>
                             <div class="product-text-box">
                                 <p class="items_name">Mango  People  T-shirt</p>
                                 <p class="items_price">$52.00</p>
@@ -437,7 +449,7 @@
                     </div>
                     <div class="product_card">
                         <a href="single-page.html" class="item">
-                            <img class="item-img" src="images/item4.png" alt="product">
+                            <img class="item-img" src="images/item12.png" alt="product">
                             <div class="product-text-box">
                                 <p class="items_name">Mango  People  T-shirt</p>
                                 <p class="items_price">$52.00</p>
@@ -482,10 +494,10 @@
             <div class="footer_flex">
                 <div class="footer_brand">
                     <div class="header__logo">
-                        <a href="#">
+                        <a href="index.html">
                             <img class="logo" src="images/logo.png" alt="logo">
                         </a>
-                        <a href="#">
+                        <a href="index.html">
                             <p class="header__name">bran<span class="name_item">d</span> </p>
                             </a>
                     </div>
