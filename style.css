@@ -1249,4 +1249,8 @@ button:focus {
     font-weight: 700;
 }
 
-.product_feature {}
+.breadcrumb-li span {
+    color: #636363;
+    font-family: "Lato Light";
+    font-weight: 300;
+}

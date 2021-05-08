@@ -7,557 +7,587 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header__flex">
-                <div class="header__left">
-                    <a class="header__logo" href="index.html">
-                        <img class="logo" src="images/logo.png" alt="logo">
-                        <p class="header__name">bran<span class="name_item">d</span> </p>
-                    </a>
-                    <form action="#" class="header__search">
-                        <details>
-                            <summary>Browse </summary>
-                            <div class="search">
-                                <div class="search_menu">
-                                    <p>women</p>
-                                    <ul>
-                                            <li class="search_link"><a class="item_link" href="product.html">Dresses</a></li>
-                                            <li class="search_link"><a class="item_link" href="product.html">Tops</a></li>
-                                            <li class="search_link"><a class="item_link" href="product.html">Sweaters/Knits</a></li>
-                                            <li class="search_link"><a class="item_link" href="product.html">Jackets/Coats</a></li>
+    <div class="page">
+        <header>
+            <div class="container">
+                <div class="header__flex">
+                    <div class="header__left">
+                        <a class="header__logo" href="index.html">
+                            <img class="logo" src="images/logo.png" alt="logo">
+                            <p class="header__name">bran<span class="name_item">d</span> </p>
+                        </a>
+                        <form action="#" class="header__search">
+                            <details>
+                                <summary>Browse </summary>
+                                <div class="search">
+                                    <div class="search_menu">
+                                        <p>women</p>
+                                        <ul>
+                                                <li class="search_link"><a class="item_link" href="product.html">Dresses</a></li>
+                                                <li class="search_link"><a class="item_link" href="product.html">Tops</a></li>
+                                                <li class="search_link"><a class="item_link" href="product.html">Sweaters/Knits</a></li>
+                                                <li class="search_link"><a class="item_link" href="product.html">Jackets/Coats</a></li>
+                                                <li class="search_link"><a class="item_link" href="product.html">Blazers</a></li>
+                                                <li class="search_link"><a class="item_link" href="product.html">Denim</a></li>
+                                                <li class="search_link"><a class="item_link" href="product.html">Leggings/Pants</a></li>
+                                                <li class="search_link"><a class="item_link" href="product.html">Skirts/Shorts</a></li>
+                                                <li class="search_link"><a class="item_link" href="product.html">Accessories </a></li>
+                                        </ul> 
+                                    </div>
+                                    <div class="search_menu">
+                                         <p>women</p>
+                                         <ul>
+                                            <li class="search_link"><a class="item_link" href="product.html">Tees/Tank tops</a></li>
+                                            <li class="search_link"><a class="item_link" href="product.html">Shirts/Polos</a></li>
+                                            <li class="search_link"><a class="item_link" href="product.html">Sweaters</a></li>
+                                            <li class="search_link"><a class="item_link" href="product.html">Sweatshirts/Hoodies</a></li>
                                             <li class="search_link"><a class="item_link" href="product.html">Blazers</a></li>
-                                            <li class="search_link"><a class="item_link" href="product.html">Denim</a></li>
-                                            <li class="search_link"><a class="item_link" href="product.html">Leggings/Pants</a></li>
-                                            <li class="search_link"><a class="item_link" href="product.html">Skirts/Shorts</a></li>
-                                            <li class="search_link"><a class="item_link" href="product.html">Accessories </a></li>
-                                    </ul> 
+                                            <li class="search_link"><a class="item_link" href="product.html">Jackets/vests</a></li>
+                                        </ul> 
+                                    </div>
                                 </div>
-                                <div class="search_menu">
-                                     <p>women</p>
-                                     <ul>
-                                        <li class="search_link"><a class="item_link" href="product.html">Tees/Tank tops</a></li>
-                                        <li class="search_link"><a class="item_link" href="product.html">Shirts/Polos</a></li>
-                                        <li class="search_link"><a class="item_link" href="product.html">Sweaters</a></li>
-                                        <li class="search_link"><a class="item_link" href="product.html">Sweatshirts/Hoodies</a></li>
-                                        <li class="search_link"><a class="item_link" href="product.html">Blazers</a></li>
-                                        <li class="search_link"><a class="item_link" href="product.html">Jackets/vests</a></li>
-                                    </ul> 
+                            </details>
+                            <input  type="text" placeholder="Search for Item...">
+                            <button class="button__search" type="submit"><i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="header__right">
+                        <a class="cart" href="#"><img class="basket" src="images/basket.png" alt="basket">
+                            <div class="cart_box">
+                                <div class="cart_item">
+                                    <img src="images/cart_img1.png" alt="cart">
+                                    <div class="cart_item_text">
+                                        <p class="cart_item_name">Rebox Zane</p>
+                                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                                        <p class="cart_price">1  <span style="font-size: 10px;">x</span>   $250</p>
+                                    </div>
+                                    <i class="fas fa-times-circle close"></i>
                                 </div>
+                                <div class="cart_item">
+                                    <img src="images/cart_img2.png" alt="cart">
+                                    <div class="cart_item_text">
+                                        <p class="cart_item_name">Rebox Zane</p>
+                                        <div class="stars"><i class="fas fa-star"></i></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                                        <p class="cart_price">1  <span style="font-size: 10px;">x</span>   $250</p>
+                                    </div>
+                                    <i class="fas fa-times-circle close"></i>
+                                </div>
+                                <div class="summ">
+                                    <p>TOTAL</p>
+                                    <p>$500.00</p>
+                                </div>
+                                <button>
+                                    <p style="color:#ef5b70;">Checkout</p>
+                                </button>
+                                <button >
+                                    <p>Go to cart</p>
+                                </button>
+
                             </div>
-                        </details>
-                        <input  type="text" placeholder="Search for Item...">
-                        <button class="button__search" type="submit"><i class="fas fa-search"></i>
-                        </button>
-                    </form>
-                </div>
-                <div class="header__right">
-                    <a href="#"> <img class="basket" src="images/basket.png" alt="basket"></a>
-                    <a href="#" class="header__button__text my-acc">My Account</a>
+                        </a>
+                        <a href="#" class="header__button__text my-acc">My Account</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header> 
-    <nav class="navigation">
-        <div class="container">
-            <ul class="nav__main">
-                <li class="nav_list"><a class="nav_link" href="#">Home</a>
-                    <div class="nav-box">
-                        <div class="item_flex">
-                            <h3 class="item_heading">Women</h3>
-                            <a href="#" class="item_link">Dresses</a>
-                            <a href="#" class="item_link">Tops</a>
-                            <a href="#" class="item_link">Sweaters/Knits</a>
-                            <a href="#" class="item_link">Jackets/Coats</a>
-                            <a href="#" class="item_link">Blazers</a>
-                            <a href="#" class="item_link">Denim</a>
-                            <a href="#" class="item_link">Leggings/Pants</a>
-                            <a href="#" class="item_link">Skirts/Shorts</a>
-                            <a href="#" class="item_link">Accessories </a>
+        </header> 
+        <nav class="navigation">
+            <div class="container">
+                <ul class="nav__main">
+                    <li class="nav_list"><a class="nav_link" href="#">Home</a>
+                        <div class="nav-box">
+                            <div class="item_flex">
+                                <h3 class="item_heading">Women</h3>
+                                <a href="#" class="item_link">Dresses</a>
+                                <a href="#" class="item_link">Tops</a>
+                                <a href="#" class="item_link">Sweaters/Knits</a>
+                                <a href="#" class="item_link">Jackets/Coats</a>
+                                <a href="#" class="item_link">Blazers</a>
+                                <a href="#" class="item_link">Denim</a>
+                                <a href="#" class="item_link">Leggings/Pants</a>
+                                <a href="#" class="item_link">Skirts/Shorts</a>
+                                <a href="#" class="item_link">Accessories </a>
+                            </div>
+                            <div class="item_flex">
+                                <h3 class="item_heading">Women</h3>
+                                <a href="#" class="item_link">Dresses</a>
+                                <a href="#" class="item_link">Tops</a>
+                                <a href="#" class="item_link">Sweaters/Knits</a>
+                                <a href="#" class="item_link">Jackets/Coats</a>
+                            <div style="height: 20px;"></div>
+                                <h3 class="item_heading">Women</h3>
+                                <a href="#" class="item_link">Dresses</a>
+                                <a href="#" class="item_link">Tops</a>
+                                <a href="#" class="item_link">Sweaters/Knits</a>
+                            </div>
+                            <div class="nav_last">
+                            <div class="item_flex nav_last_column">
+                                <h3 class="item_heading">Women</h3>
+                                <a href="#" class="item_link">Dresses</a>
+                                <a href="#" class="item_link">Tops</a>
+                                <a href="#" class="item_link">Sweaters/Knits</a>
+                                <a href="#" class="item_link">Jackets/Coats</a>
+                            </div>
+                            <img class="nav_img" src="images/nav_img.jpg" alt="photo">
+                           </div> 
                         </div>
-                        <div class="item_flex">
-                            <h3 class="item_heading">Women</h3>
-                            <a href="#" class="item_link">Dresses</a>
-                            <a href="#" class="item_link">Tops</a>
-                            <a href="#" class="item_link">Sweaters/Knits</a>
-                            <a href="#" class="item_link">Jackets/Coats</a>
-                        <div style="height: 20px;"></div>
-                            <h3 class="item_heading">Women</h3>
-                            <a href="#" class="item_link">Dresses</a>
-                            <a href="#" class="item_link">Tops</a>
-                            <a href="#" class="item_link">Sweaters/Knits</a>
+                    </li>
+                    <li class="nav_list"><a class="nav_link" href="#">Man</a>
+                        <div class="nav-box">
+                            <div class="item_flex">
+                                <h3 class="item_heading">Women</h3>
+                                <a href="#" class="item_link">Dresses</a>
+                                <a href="#" class="item_link">Tops</a>
+                                <a href="#" class="item_link">Sweaters/Knits</a>
+                                <a href="#" class="item_link">Jackets/Coats</a>
+                                <a href="#" class="item_link">Blazers</a>
+                                <a href="#" class="item_link">Denim</a>
+                                <a href="#" class="item_link">Leggings/Pants</a>
+                                <a href="#" class="item_link">Skirts/Shorts</a>
+                                <a href="#" class="item_link">Accessories </a>
+                            </div>
+                            <div class="item_flex">
+                                <h3 class="item_heading">Women</h3>
+                                <a href="#" class="item_link">Dresses</a>
+                                <a href="#" class="item_link">Tops</a>
+                                <a href="#" class="item_link">Sweaters/Knits</a>
+                                <a href="#" class="item_link">Jackets/Coats</a>
+                            <div style="height: 20px;"></div>
+                                <h3 class="item_heading">Women</h3>
+                                <a href="#" class="item_link">Dresses</a>
+                                <a href="#" class="item_link">Tops</a>
+                                <a href="#" class="item_link">Sweaters/Knits</a>
+                            </div>
+                            <div class="nav_last">
+                            <div class="item_flex nav_last_column">
+                                <h3 class="item_heading">Women</h3>
+                                <a href="#" class="item_link">Dresses</a>
+                                <a href="#" class="item_link">Tops</a>
+                                <a href="#" class="item_link">Sweaters/Knits</a>
+                                <a href="#" class="item_link">Jackets/Coats</a>
+                            </div>
+                            <img class="nav_img" src="images/nav_img.jpg" alt="photo">
+                           </div> 
                         </div>
-                        <div class="nav_last">
-                        <div class="item_flex nav_last_column">
-                            <h3 class="item_heading">Women</h3>
-                            <a href="#" class="item_link">Dresses</a>
-                            <a href="#" class="item_link">Tops</a>
-                            <a href="#" class="item_link">Sweaters/Knits</a>
-                            <a href="#" class="item_link">Jackets/Coats</a>
+                    </li>
+                    <li class="nav_list"><a class="nav_link" href="#">Women</a>
+                        <div class="nav-box">
+                            <div class="item_flex">
+                                <h3 class="item_heading">Women</h3>
+                                <a href="#" class="item_link">Dresses</a>
+                                <a href="#" class="item_link">Tops</a>
+                                <a href="#" class="item_link">Sweaters/Knits</a>
+                                <a href="#" class="item_link">Jackets/Coats</a>
+                                <a href="#" class="item_link">Blazers</a>
+                                <a href="#" class="item_link">Denim</a>
+                                <a href="#" class="item_link">Leggings/Pants</a>
+                                <a href="#" class="item_link">Skirts/Shorts</a>
+                                <a href="#" class="item_link">Accessories </a>
+                            </div>
+                            <div class="item_flex">
+                                <h3 class="item_heading">Women</h3>
+                                <a href="#" class="item_link">Dresses</a>
+                                <a href="#" class="item_link">Tops</a>
+                                <a href="#" class="item_link">Sweaters/Knits</a>
+                                <a href="#" class="item_link">Jackets/Coats</a>
+                            <div style="height: 20px;"></div>
+                                <h3 class="item_heading">Women</h3>
+                                <a href="#" class="item_link">Dresses</a>
+                                <a href="#" class="item_link">Tops</a>
+                                <a href="#" class="item_link">Sweaters/Knits</a>
+                            </div>
+                            <div class="nav_last">
+                            <div class="item_flex nav_last_column">
+                                <h3 class="item_heading">Women</h3>
+                                <a href="#" class="item_link">Dresses</a>
+                                <a href="#" class="item_link">Tops</a>
+                                <a href="#" class="item_link">Sweaters/Knits</a>
+                                <a href="#" class="item_link">Jackets/Coats</a>
+                            </div>
+                            <img class="nav_img" src="images/nav_img.jpg" alt="photo">
+                           </div> 
                         </div>
-                        <img class="nav_img" src="images/nav_img.jpg" alt="photo">
-                       </div> 
-                    </div>
-                </li>
-                <li class="nav_list"><a class="nav_link" href="#">Man</a>
-                    <div class="nav-box">
-                        <div class="item_flex">
-                            <h3 class="item_heading">Women</h3>
-                            <a href="#" class="item_link">Dresses</a>
-                            <a href="#" class="item_link">Tops</a>
-                            <a href="#" class="item_link">Sweaters/Knits</a>
-                            <a href="#" class="item_link">Jackets/Coats</a>
-                            <a href="#" class="item_link">Blazers</a>
-                            <a href="#" class="item_link">Denim</a>
-                            <a href="#" class="item_link">Leggings/Pants</a>
-                            <a href="#" class="item_link">Skirts/Shorts</a>
-                            <a href="#" class="item_link">Accessories </a>
+                    </li>
+                    <li class="nav_list"><a class="nav_link" href="#">Kids</a>
+                        <div class="nav-box">
+                            <div class="item_flex">
+                                <h3 class="item_heading">Women</h3>
+                                <a href="#" class="item_link">Dresses</a>
+                                <a href="#" class="item_link">Tops</a>
+                                <a href="#" class="item_link">Sweaters/Knits</a>
+                                <a href="#" class="item_link">Jackets/Coats</a>
+                                <a href="#" class="item_link">Blazers</a>
+                                <a href="#" class="item_link">Denim</a>
+                                <a href="#" class="item_link">Leggings/Pants</a>
+                                <a href="#" class="item_link">Skirts/Shorts</a>
+                                <a href="#" class="item_link">Accessories </a>
+                            </div>
+                            <div class="item_flex">
+                                <h3 class="item_heading">Women</h3>
+                                <a href="#" class="item_link">Dresses</a>
+                                <a href="#" class="item_link">Tops</a>
+                                <a href="#" class="item_link">Sweaters/Knits</a>
+                                <a href="#" class="item_link">Jackets/Coats</a>
+                            <div style="height: 20px;"></div>
+                                <h3 class="item_heading">Women</h3>
+                                <a href="#" class="item_link">Dresses</a>
+                                <a href="#" class="item_link">Tops</a>
+                                <a href="#" class="item_link">Sweaters/Knits</a>
+                            </div>
+                            <div class="nav_last">
+                            <div class="item_flex nav_last_column">
+                                <h3 class="item_heading">Women</h3>
+                                <a href="#" class="item_link">Dresses</a>
+                                <a href="#" class="item_link">Tops</a>
+                                <a href="#" class="item_link">Sweaters/Knits</a>
+                                <a href="#" class="item_link">Jackets/Coats</a>
+                            </div>
+                            <img class="nav_img" src="images/nav_img.jpg" alt="photo">
+                           </div> 
                         </div>
-                        <div class="item_flex">
-                            <h3 class="item_heading">Women</h3>
-                            <a href="#" class="item_link">Dresses</a>
-                            <a href="#" class="item_link">Tops</a>
-                            <a href="#" class="item_link">Sweaters/Knits</a>
-                            <a href="#" class="item_link">Jackets/Coats</a>
-                        <div style="height: 20px;"></div>
-                            <h3 class="item_heading">Women</h3>
-                            <a href="#" class="item_link">Dresses</a>
-                            <a href="#" class="item_link">Tops</a>
-                            <a href="#" class="item_link">Sweaters/Knits</a>
+                    </li>
+                    <li class="nav_list last"><a class="nav_link" href="#">Accoseriese</a>
+                        <div class="nav-box">
+                            <div class="item_flex">
+                                <h3 class="item_heading">Women</h3>
+                                <a href="#" class="item_link">Dresses</a>
+                                <a href="#" class="item_link">Tops</a>
+                                <a href="#" class="item_link">Sweaters/Knits</a>
+                                <a href="#" class="item_link">Jackets/Coats</a>
+                                <a href="#" class="item_link">Blazers</a>
+                                <a href="#" class="item_link">Denim</a>
+                                <a href="#" class="item_link">Leggings/Pants</a>
+                                <a href="#" class="item_link">Skirts/Shorts</a>
+                                <a href="#" class="item_link">Accessories </a>
+                            </div>
+                            <div class="item_flex">
+                                <h3 class="item_heading">Women</h3>
+                                <a href="#" class="item_link">Dresses</a>
+                                <a href="#" class="item_link">Tops</a>
+                                <a href="#" class="item_link">Sweaters/Knits</a>
+                                <a href="#" class="item_link">Jackets/Coats</a>
+                            <div style="height: 20px;"></div>
+                                <h3 class="item_heading">Women</h3>
+                                <a href="#" class="item_link">Dresses</a>
+                                <a href="#" class="item_link">Tops</a>
+                                <a href="#" class="item_link">Sweaters/Knits</a>
+                            </div>
+                            <div class="nav_last">
+                            <div class="item_flex nav_last_column">
+                                <h3 class="item_heading">Women</h3>
+                                <a href="#" class="item_link">Dresses</a>
+                                <a href="#" class="item_link">Tops</a>
+                                <a href="#" class="item_link">Sweaters/Knits</a>
+                                <a href="#" class="item_link">Jackets/Coats</a>
+                            </div>
+                            <img class="nav_img" src="images/nav_img.jpg" alt="photo">
+                           </div> 
                         </div>
-                        <div class="item_flex">
-                            <h3 class="item_heading">Women</h3>
-                            <a href="#" class="item_link">Dresses</a>
-                            <a href="#" class="item_link">Tops</a>
-                            <a href="#" class="item_link">Sweaters/Knits</a>
-                            <a href="#" class="item_link">Jackets/Coats</a>
-                       
-                        <div style="width: 225px; height: 1px;"></div>
-                        <img class="nav_img" src="images/nav_img.jpg" alt="photo">
-                       </div> 
-                    </div>
-                </li>
-                <li class="nav_list"><a class="nav_link" href="#">Women</a>
-                    <div class="nav-box">
-                        <div class="item_flex">
-                            <h3 class="item_heading">Women</h3>
-                            <a href="#" class="item_link">Dresses</a>
-                            <a href="#" class="item_link">Tops</a>
-                            <a href="#" class="item_link">Sweaters/Knits</a>
-                            <a href="#" class="item_link">Jackets/Coats</a>
-                            <a href="#" class="item_link">Blazers</a>
-                            <a href="#" class="item_link">Denim</a>
-                            <a href="#" class="item_link">Leggings/Pants</a>
-                            <a href="#" class="item_link">Skirts/Shorts</a>
-                            <a href="#" class="item_link">Accessories </a>
+                    </li>
+                    <li class="nav_list last"><a class="nav_link" href="#">Featured</a>
+                        <div class="nav-box">
+                            <div class="item_flex">
+                                <h3 class="item_heading">Women</h3>
+                                <a href="#" class="item_link">Dresses</a>
+                                <a href="#" class="item_link">Tops</a>
+                                <a href="#" class="item_link">Sweaters/Knits</a>
+                                <a href="#" class="item_link">Jackets/Coats</a>
+                                <a href="#" class="item_link">Blazers</a>
+                                <a href="#" class="item_link">Denim</a>
+                                <a href="#" class="item_link">Leggings/Pants</a>
+                                <a href="#" class="item_link">Skirts/Shorts</a>
+                                <a href="#" class="item_link">Accessories </a>
+                            </div>
+                            <div class="item_flex">
+                                <h3 class="item_heading">Women</h3>
+                                <a href="#" class="item_link">Dresses</a>
+                                <a href="#" class="item_link">Tops</a>
+                                <a href="#" class="item_link">Sweaters/Knits</a>
+                                <a href="#" class="item_link">Jackets/Coats</a>
+                            <div style="height: 20px;"></div>
+                                <h3 class="item_heading">Women</h3>
+                                <a href="#" class="item_link">Dresses</a>
+                                <a href="#" class="item_link">Tops</a>
+                                <a href="#" class="item_link">Sweaters/Knits</a>
+                            </div>
+                            <div class="nav_last">
+                            <div class="item_flex nav_last_column">
+                                <h3 class="item_heading">Women</h3>
+                                <a href="#" class="item_link">Dresses</a>
+                                <a href="#" class="item_link">Tops</a>
+                                <a href="#" class="item_link">Sweaters/Knits</a>
+                                <a href="#" class="item_link">Jackets/Coats</a>
+                            </div>
+                            <img class="nav_img" src="images/nav_img.jpg" alt="photo">
+                           </div> 
                         </div>
-                        <div class="item_flex">
-                            <h3 class="item_heading">Women</h3>
-                            <a href="#" class="item_link">Dresses</a>
-                            <a href="#" class="item_link">Tops</a>
-                            <a href="#" class="item_link">Sweaters/Knits</a>
-                            <a href="#" class="item_link">Jackets/Coats</a>
-                        <div style="height: 20px;"></div>
-                            <h3 class="item_heading">Women</h3>
-                            <a href="#" class="item_link">Dresses</a>
-                            <a href="#" class="item_link">Tops</a>
-                            <a href="#" class="item_link">Sweaters/Knits</a>
+                    </li>
+                    <li class="nav_list last"><a class="nav_link" href="#">Hot Deals</a>
+                        <div class="nav-box">
+                            <div class="item_flex">
+                                <h3 class="item_heading">Women</h3>
+                                <a href="#" class="item_link">Dresses</a>
+                                <a href="#" class="item_link">Tops</a>
+                                <a href="#" class="item_link">Sweaters/Knits</a>
+                                <a href="#" class="item_link">Jackets/Coats</a>
+                                <a href="#" class="item_link">Blazers</a>
+                                <a href="#" class="item_link">Denim</a>
+                                <a href="#" class="item_link">Leggings/Pants</a>
+                                <a href="#" class="item_link">Skirts/Shorts</a>
+                                <a href="#" class="item_link">Accessories </a>
+                            </div>
+                            <div class="item_flex">
+                                <h3 class="item_heading">Women</h3>
+                                <a href="#" class="item_link">Dresses</a>
+                                <a href="#" class="item_link">Tops</a>
+                                <a href="#" class="item_link">Sweaters/Knits</a>
+                                <a href="#" class="item_link">Jackets/Coats</a>
+                            <div style="height: 20px;"></div>
+                                <h3 class="item_heading">Women</h3>
+                                <a href="#" class="item_link">Dresses</a>
+                                <a href="#" class="item_link">Tops</a>
+                                <a href="#" class="item_link">Sweaters/Knits</a>
+                            </div>
+                            <div class="nav_last">
+                            <div class="item_flex nav_last_column">
+                                <h3 class="item_heading">Women</h3>
+                                <a href="#" class="item_link">Dresses</a>
+                                <a href="#" class="item_link">Tops</a>
+                                <a href="#" class="item_link">Sweaters/Knits</a>
+                                <a href="#" class="item_link">Jackets/Coats</a>
+                            </div>
+                            <img class="nav_img" src="images/nav_img.jpg" alt="photo">
+                           </div> 
                         </div>
-                        <div class="item_flex">
-                            <h3 class="item_heading">Women</h3>
-                            <a href="#" class="item_link">Dresses</a>
-                            <a href="#" class="item_link">Tops</a>
-                            <a href="#" class="item_link">Sweaters/Knits</a>
-                            <a href="#" class="item_link">Jackets/Coats</a>
-                       
-                        <div style="width: 225px; height: 1px;"></div>
-                        <img class="nav_img" src="images/nav_img.jpg" alt="photo">
-                       </div> 
-                    </div>
-                </li>
-                <li class="nav_list"><a class="nav_link" href="#">Kids</a>
-                    <div class="nav-box">
-                        <div class="item_flex">
-                            <h3 class="item_heading">Women</h3>
-                            <a href="#" class="item_link">Dresses</a>
-                            <a href="#" class="item_link">Tops</a>
-                            <a href="#" class="item_link">Sweaters/Knits</a>
-                            <a href="#" class="item_link">Jackets/Coats</a>
-                            <a href="#" class="item_link">Blazers</a>
-                            <a href="#" class="item_link">Denim</a>
-                            <a href="#" class="item_link">Leggings/Pants</a>
-                            <a href="#" class="item_link">Skirts/Shorts</a>
-                            <a href="#" class="item_link">Accessories </a>
-                        </div>
-                        <div class="item_flex">
-                            <h3 class="item_heading">Women</h3>
-                            <a href="#" class="item_link">Dresses</a>
-                            <a href="#" class="item_link">Tops</a>
-                            <a href="#" class="item_link">Sweaters/Knits</a>
-                            <a href="#" class="item_link">Jackets/Coats</a>
-                        <div style="height: 20px;"></div>
-                            <h3 class="item_heading">Women</h3>
-                            <a href="#" class="item_link">Dresses</a>
-                            <a href="#" class="item_link">Tops</a>
-                            <a href="#" class="item_link">Sweaters/Knits</a>
-                        </div>
-                        <div class="item_flex">
-                            <h3 class="item_heading">Women</h3>
-                            <a href="#" class="item_link">Dresses</a>
-                            <a href="#" class="item_link">Tops</a>
-                            <a href="#" class="item_link">Sweaters/Knits</a>
-                            <a href="#" class="item_link">Jackets/Coats</a>
-                       
-                        <div style="width: 225px; height: 1px;"></div>
-                        <img class="nav_img" src="images/nav_img.jpg" alt="photo">
-                       </div> 
-                    </div>
-                </li>
-                <li class="nav_list last"><a class="nav_link" href="#">Accoseriese</a>
-                    <div class="nav-box">
-                        <div class="item_flex">
-                            <h3 class="item_heading">Women</h3>
-                            <a href="#" class="item_link">Dresses</a>
-                            <a href="#" class="item_link">Tops</a>
-                            <a href="#" class="item_link">Sweaters/Knits</a>
-                            <a href="#" class="item_link">Jackets/Coats</a>
-                            <a href="#" class="item_link">Blazers</a>
-                            <a href="#" class="item_link">Denim</a>
-                            <a href="#" class="item_link">Leggings/Pants</a>
-                            <a href="#" class="item_link">Skirts/Shorts</a>
-                            <a href="#" class="item_link">Accessories </a>
-                        </div>
-                        <div class="item_flex">
-                            <h3 class="item_heading">Women</h3>
-                            <a href="#" class="item_link">Dresses</a>
-                            <a href="#" class="item_link">Tops</a>
-                            <a href="#" class="item_link">Sweaters/Knits</a>
-                            <a href="#" class="item_link">Jackets/Coats</a>
-                        <div style="height: 20px;"></div>
-                            <h3 class="item_heading">Women</h3>
-                            <a href="#" class="item_link">Dresses</a>
-                            <a href="#" class="item_link">Tops</a>
-                            <a href="#" class="item_link">Sweaters/Knits</a>
-                        </div>
-                        <div class="item_flex">
-                            <h3 class="item_heading">Women</h3>
-                            <a href="#" class="item_link">Dresses</a>
-                            <a href="#" class="item_link">Tops</a>
-                            <a href="#" class="item_link">Sweaters/Knits</a>
-                            <a href="#" class="item_link">Jackets/Coats</a>
-                       
-                        <div style="width: 225px; height: 1px;"></div>
-                        <img class="nav_img" src="images/nav_img.jpg" alt="photo">
-                       </div> 
-                    </div>
-                </li>
-                <li class="nav_list last"><a class="nav_link" href="#">Featured</a>
-                    <div class="nav-box">
-                        <div class="item_flex">
-                            <h3 class="item_heading">Women</h3>
-                            <a href="#" class="item_link">Dresses</a>
-                            <a href="#" class="item_link">Tops</a>
-                            <a href="#" class="item_link">Sweaters/Knits</a>
-                            <a href="#" class="item_link">Jackets/Coats</a>
-                            <a href="#" class="item_link">Blazers</a>
-                            <a href="#" class="item_link">Denim</a>
-                            <a href="#" class="item_link">Leggings/Pants</a>
-                            <a href="#" class="item_link">Skirts/Shorts</a>
-                            <a href="#" class="item_link">Accessories </a>
-                        </div>
-                        <div class="item_flex">
-                            <h3 class="item_heading">Women</h3>
-                            <a href="#" class="item_link">Dresses</a>
-                            <a href="#" class="item_link">Tops</a>
-                            <a href="#" class="item_link">Sweaters/Knits</a>
-                            <a href="#" class="item_link">Jackets/Coats</a>
-                        <div style="height: 20px;"></div>
-                            <h3 class="item_heading">Women</h3>
-                            <a href="#" class="item_link">Dresses</a>
-                            <a href="#" class="item_link">Tops</a>
-                            <a href="#" class="item_link">Sweaters/Knits</a>
-                        </div>
-                        <div class="item_flex">
-                            <h3 class="item_heading">Women</h3>
-                            <a href="#" class="item_link">Dresses</a>
-                            <a href="#" class="item_link">Tops</a>
-                            <a href="#" class="item_link">Sweaters/Knits</a>
-                            <a href="#" class="item_link">Jackets/Coats</a>
-                       
-                        <div style="width: 225px; height: 1px;"></div>
-                        <img class="nav_img" src="images/nav_img.jpg" alt="photo">
-                       </div> 
-                    </div>
-                </li>
-                <li class="nav_list last"><a class="nav_link" href="#">Hot Deals</a>
-                    <div class="nav-box">
-                        <div class="item_flex">
-                            <h3 class="item_heading">Women</h3>
-                            <a href="#" class="item_link">Dresses</a>
-                            <a href="#" class="item_link">Tops</a>
-                            <a href="#" class="item_link">Sweaters/Knits</a>
-                            <a href="#" class="item_link">Jackets/Coats</a>
-                            <a href="#" class="item_link">Blazers</a>
-                            <a href="#" class="item_link">Denim</a>
-                            <a href="#" class="item_link">Leggings/Pants</a>
-                            <a href="#" class="item_link">Skirts/Shorts</a>
-                            <a href="#" class="item_link">Accessories </a>
-                        </div>
-                        <div class="item_flex">
-                            <h3 class="item_heading">Women</h3>
-                            <a href="#" class="item_link">Dresses</a>
-                            <a href="#" class="item_link">Tops</a>
-                            <a href="#" class="item_link">Sweaters/Knits</a>
-                            <a href="#" class="item_link">Jackets/Coats</a>
-                        <div style="height: 20px;"></div>
-                            <h3 class="item_heading">Women</h3>
-                            <a href="#" class="item_link">Dresses</a>
-                            <a href="#" class="item_link">Tops</a>
-                            <a href="#" class="item_link">Sweaters/Knits</a>
-                        </div>
-                        <div class="item_flex">
-                            <h3 class="item_heading">Women</h3>
-                            <a href="#" class="item_link">Dresses</a>
-                            <a href="#" class="item_link">Tops</a>
-                            <a href="#" class="item_link">Sweaters/Knits</a>
-                            <a href="#" class="item_link">Jackets/Coats</a>
-                       
-                        <div style="width: 225px; height: 1px;"></div>
-                        <img class="nav_img" src="images/nav_img.jpg" alt="photo">
-                       </div> 
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="breadcrumbs">
-        <div class="container">
-            <div class="breadcrumb-text">
-                <h1>New Arrivals </h1>
-                <ul class="breadcrumb-list">
-                    <li class="breadcrumb-li"><a class="breadcrumb-link" href="product.html">Home</a> /</li>
-                    <li class="breadcrumb-li"><a class="breadcrumb-link" href="product.html"> Men</a> /</li>
-                    <li class="breadcrumb-li"><a class="breadcrumb-link" href="product.html"> New Arrivals</a></li>
+                    </li>
                 </ul>
             </div>
-        </div>
-    </div>
-    <div class="product_slider">
-        <div class="container">
-            <div class="item-slider">
-                <i class="fas fa-chevron-left"></i>
-                <img src="images/prod-img.jpg"  alt="product">
-                <i class="fas fa-chevron-right"></i>
-            </div>
-        </div>
-    </div>
-    <section>
-        <div class="container">
-            <div class="description">
-                <h4>WOMEN COLLECTION</h4>
-                <div class="slider-point">
-                    <div class="slider-link"></div>
-                    <div class="slider-link pink"></div>
-                    <div class="slider-link"></div>
-                </div>
-                <h3>Moschino Cheap And Chic</h3>
-                <p>Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. </p>
-                <div class="production">
-                    <p>MATERIAL: <b>COTTON</b></p>
-                    <p>DESIGNER: <b>BINBURHAN</b></p>
-                </div>
-                <h2>$561</h2>
-            <form action="#">
-                <div class="choice">
-                    <div class="choice-link">
-                        <label for="color">CHOOSE COLOR</label><br>
-                        <input id="color" list="dl_color">
-                        <datalist id="dl_color">
-                            <option label="black" value="black"></option>
-                            <option label="red" value="red"></option>
-                            <option label="green" value="green"></option>
-                    </div>
-                    <div class="choice-link">
-                        <label for="size">CHOOSE SIZE</label><br>
-                        <input id="size" list="dl_size">
-                        <datalist id="dl_size">
-                            <option label="S" value="S"></option>
-                            <option label="M" value="M"></option>
-                            <option label="L" value="L"></option>
-                            <option label="XL" value="XL"></option>
-                        </datalist>
-                    </div>
-                    <div class="choice-link">
-                        <label for="QUANTITY">QUANTITY</label><br>
-                        <input id="QUANTITY" type="number" required="" min="1" max="10">
-                    </div>
-                </div>
-                <div class="choice-but">
-                    <button class="choice-button" type="submit"><img src="images/choice-button.png" alt="choice-button">
-                        <p>Add to Cart</p></button>
-                    
-                </div>
-            </form>
-            
-            </div>
-        </div>
-    </section>  
-    <section class="product">
-        <div class="container">
-               <div class="product_text">
-                    <h3>you may like also</h3>
-               </div>
-                <div class="product_flex">
-                    <div class="product_card">
-                        <a href="single-page.html" class="item">
-                            <div class="single_page_img item-img"><img src="images/item9.png" alt="product"></div>
-                            <div class="product-text-box">
-                                <p class="items_name">Mango  People  T-shirt</p>
-                                <p class="items_price">$52.00</p>
-                            </div>
-                        </a>
-                        <div class="box-add">
-                            <a class="add" href="#"><img class="add-img" src="images/cart_add.svg" alt="cart-img">Add to cart</a>
-                        </div>
-                    </div>
-                    <div class="product_card">
-                        <a href="single-page.html" class="item">
-                            <div class="single_page_img item-img"><img src="images/item10.png" alt="product"></div>
-                            <div class="product-text-box">
-                                <p class="items_name">Mango  People  T-shirt</p>
-                                <p class="items_price">$52.00</p>
-                            </div>
-                        </a>
-                        <div class="box-add">
-                            <a class="add" href="#"><img class="add-img" src="images/cart_add.svg" alt="cart-img">Add to cart</a>
-                        </div>
-                    </div>
-                    <div class="product_card">
-                        <a href="single-page.html" class="item">
-                            <div class="single_page_img item-img"><img src="images/item11.png" alt="product"></div>
-                            <div class="product-text-box">
-                                <p class="items_name">Mango  People  T-shirt</p>
-                                <p class="items_price">$52.00</p>
-                            </div>
-                        </a>
-                        <div class="box-add">
-                            <a class="add" href="#"><img class="add-img" src="images/cart_add.svg" alt="cart-img">Add to cart</a>
-                        </div>
-                    </div>
-                    <div class="product_card">
-                        <a href="single-page.html" class="item">
-                            <img class="item-img" src="images/item12.png" alt="product">
-                            <div class="product-text-box">
-                                <p class="items_name">Mango  People  T-shirt</p>
-                                <p class="items_price">$52.00</p>
-                            </div>
-                        </a>
-                        <div class="box-add">
-                            <a class="add" href="#"><img class="add-img" src="images/cart_add.svg" alt="cart-img">Add to cart</a>
-                        </div>
-                    </div>
+        </nav>
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumb-text">
+                    <h1>New Arrivals </h1>
+                    <ul class="breadcrumb-list">
+                        <li class="breadcrumb-li"><a style="cursor: default; color: #f16d7f; font-weight: 700; font-family: "Lato Bold";" class="breadcrumb-link" href="product.html">Home</a><span> / </span></li>
+                        <li class="breadcrumb-li"><a class="breadcrumb-link" href="product.html"> Men</a><span> / </span></li>
+                        <li class="breadcrumb-li"><a class="breadcrumb-link" href="product.html"> New Arrivals</a></li>
+                    </ul>
                 </div>
             </div>
-    </section>
-    <div class="communication">
-        <img src="images/subscribe_back.png" alt="com background" style="opacity:0.25;filter:alpha(opacity=25)">
-            <div class="communication_flex">
-                <div class="comment">
-                    <img class="comment_img" src="images/comment.jpg" alt="face">
-                    <div class="comment_text">
-                        <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, 
-                            a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
-                    </div>
-                    <div class="comment_text_autor">
-                        <p><b>Bin Burhan</b>
-                            <br>Dhaka, Bd</p>
-                    </div>    
+        </div>
+        <div class="product_slider">
+            <div class="container">
+                <div class="item-slider">
+                    <i class="fas fa-chevron-left"></i>
+                    <img src="images/prod-img.jpg"  alt="product">
+                    <i class="fas fa-chevron-right"></i>
                 </div>
-                <div class="comment_center"></div>
-                <div class="subscribe">
-                    <div class="subscribe_text">
-                        <p>Subscribe</p>
-                        <span>FOR OUR NEWLETTER AND PROMOTION</span>
-                    </div>
-                    <form>
-                        <div class="subscribe_form">
-                            <input class="subscribe_input" type="email" aria-label="email">
-                            <button type="submit">Subscribe</button>
-                        </div>
-                    </form>
             </div>
         </div>
-    </div>
-    <footer>
-        <div class="container">
-            <div class="footer_flex">
-                <div class="footer_brand">
-                    <div class="header__logo">
-                        <a href="index.html">
-                            <img class="logo" src="images/logo.png" alt="logo">
-                        </a>
-                        <a href="index.html">
-                            <p class="header__name">bran<span class="name_item">d</span> </p>
+        <section>
+            <div class="container">
+                <div class="description">
+                    <h4>WOMEN COLLECTION</h4>
+                    <div class="slider-point">
+                        <div class="slider-link"></div>
+                        <div class="slider-link pink"></div>
+                        <div class="slider-link"></div>
+                    </div>
+                    <h3>Moschino Cheap And Chic</h3>
+                    <p>Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. </p>
+                    <div class="production">
+                        <p>MATERIAL: <b>COTTON</b></p>
+                        <p>DESIGNER: <b>BINBURHAN</b></p>
+                    </div>
+                    <h2>$561</h2>
+                <form action="#">
+                    <div class="choice">
+                        <div class="choice-link">
+                            <label for="color">CHOOSE COLOR</label><br>
+                            <input id="color" list="dl_color">
+                            <datalist id="dl_color">
+                                <option label="black" value="black"></option>
+                                <option label="red" value="red"></option>
+                                <option label="green" value="green"></option>
+                        </div>
+                        <div class="choice-link">
+                            <label for="size">CHOOSE SIZE</label><br>
+                            <input id="size" list="dl_size">
+                            <datalist id="dl_size">
+                                <option label="S" value="S"></option>
+                                <option label="M" value="M"></option>
+                                <option label="L" value="L"></option>
+                                <option label="XL" value="XL"></option>
+                            </datalist>
+                        </div>
+                        <div class="choice-link">
+                            <label for="QUANTITY">QUANTITY</label><br>
+                            <input id="QUANTITY" type="number" required="" min="1" max="10">
+                        </div>
+                    </div>
+                    <div class="choice-but">
+                        <button class="choice-button" type="submit"><img src="images/choice-button.png" alt="choice-button">
+                            <p>Add to Cart</p></button>
+                        
+                    </div>
+                </form>
+                
+                </div>
+            </div>
+        </section>  
+        <section class="product">
+            <div class="container">
+                <div class="product_text">
+                        <h3>you may like also</h3>
+                </div>
+                    <div class="product_flex">
+                        <div class="product_card">
+                            <a href="single-page.html" class="item">
+                                <div class="single_page_img item-img"><img src="images/item9.png" alt="product"></div>
+                                <div class="product-text-box">
+                                    <p class="items_name">Mango  People  T-shirt</p>
+                                    <p class="items_price">$52.00</p>
+                                </div>
                             </a>
+                            <div class="box-add">
+                                <a class="add" href="#"><img class="add-img" src="images/cart_add.svg" alt="cart-img">Add to cart</a>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <a href="single-page.html" class="item">
+                                <div class="single_page_img item-img"><img src="images/item10.png" alt="product"></div>
+                                <div class="product-text-box">
+                                    <p class="items_name">Mango  People  T-shirt</p>
+                                    <p class="items_price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="box-add">
+                                <a class="add" href="#"><img class="add-img" src="images/cart_add.svg" alt="cart-img">Add to cart</a>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <a href="single-page.html" class="item">
+                                <div class="single_page_img item-img"><img src="images/item11.png" alt="product"></div>
+                                <div class="product-text-box">
+                                    <p class="items_name">Mango  People  T-shirt</p>
+                                    <p class="items_price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="box-add">
+                                <a class="add" href="#"><img class="add-img" src="images/cart_add.svg" alt="cart-img">Add to cart</a>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <a href="single-page.html" class="item">
+                                <img class="item-img" src="images/item12.png" alt="product">
+                                <div class="product-text-box">
+                                    <p class="items_name">Mango  People  T-shirt</p>
+                                    <p class="items_price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="box-add">
+                                <a class="add" href="#"><img class="add-img" src="images/cart_add.svg" alt="cart-img">Add to cart</a>
+                            </div>
+                        </div>
                     </div>
-                    <p class="footer_text">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.</p>
-    
-                    <p class="footer_text">Efficiently plagiarize 24/365 action items and focused infomediaries.
-                        Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
                 </div>
-                <div class="footer_info">
-                    <div class="footer_info_item">
-                        <p>COMPANY</p>
-                        <ul>
-                            <li><a class="item_link" href="#">Home</a></li>
-                            <li><a class="item_link" href="#">Shop</a></li>
-                            <li><a class="item_link" href="#">About</a></li>
-                            <li><a class="item_link" href="#">How It Works</a></li>
-                            <li><a class="item_link" href="#">Contact</a></li>
-                        </ul>
+        </section>
+        <div class="communication">
+            <img src="images/subscribe_back.png" alt="com background" style="opacity:0.25;filter:alpha(opacity=25)">
+                <div class="communication_flex">
+                    <div class="comment">
+                        <img class="comment_img" src="images/comment.jpg" alt="face">
+                        <div class="comment_text">
+                            <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, 
+                                a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                        </div>
+                        <div class="comment_text_autor">
+                            <p><b>Bin Burhan</b>
+                                <br>Dhaka, Bd</p>
+                        </div>    
                     </div>
-                    <div class="footer_info_item">
-                        <p>INFORMATION</p>
-                        <ul>
-                            <li><a class="item_link" href="#">Tearms & Condition</a></li>
-                            <li><a class="item_link" href="#">Privacy Policy</a></li>
-                            <li><a class="item_link" href="#">How to Buy</a></li>
-                            <li><a class="item_link" href="#">How to Sell</a></li>
-                            <li><a class="item_link" href="#">Promotion</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer_info_item">
-                        <p>SHOP CATEGORY</p>
-                        <ul>
-                            <li><a class="item_link" href="product.html">Men</a></li>
-                            <li><a class="item_link" href="product.html">Women</a></li>
-                            <li><a class="item_link" href="product.html">Child</a></li>
-                            <li><a class="item_link" href="product.html">Apparel</a></li>
-                            <li><a class="item_link" href="product.html">Brows All</a></li>
-                        </ul>
-                    </div>
+                    <div class="comment_center"></div>
+                    <div class="subscribe">
+                        <div class="subscribe_text">
+                            <p>Subscribe</p>
+                            <span>FOR OUR NEWLETTER AND PROMOTION</span>
+                        </div>
+                        <form>
+                            <div class="subscribe_form">
+                                <input class="subscribe_input" type="email" aria-label="email">
+                                <button type="submit">Subscribe</button>
+                            </div>
+                        </form>
                 </div>
             </div>
         </div>
-        <div class="copy">
-            <div class="container copy_flex">
-                <div class="copyright_text">
-                    <p>© 2017  Brand  All Rights Reserved.</p>
-                </div>
-                <div class="url">
-                        <a href="#"><i class="fab fa-facebook-square"></i></a>
-                        <a href="#"><i class="fab fa-twitter-square"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-pinterest-square"></i></a>
-                        <a href="#"><i class="fab fa-google-plus-square"></i></a>
+        <footer>
+            <div class="container">
+                <div class="footer_flex">
+                    <div class="footer_brand">
+                        <a class="header__logo" href="index.html">
+                            <img class="logo" src="images/logo.png" alt="logo">
+                            <p class="header__name">bran<span class="name_item">d</span> </p>
+                        </a>
+                        <p class="footer_text">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.</p>
+        
+                        <p class="footer_text">Efficiently plagiarize 24/365 action items and focused infomediaries.
+                            Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+                    </div>
+                    <div class="footer_info">
+                        <div class="footer_info_item">
+                            <p>COMPANY</p>
+                            <ul>
+                                <li><a class="item_link" href="#">Home</a></li>
+                                <li><a class="item_link" href="#">Shop</a></li>
+                                <li><a class="item_link" href="#">About</a></li>
+                                <li><a class="item_link" href="#">How It Works</a></li>
+                                <li><a class="item_link" href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_info_item">
+                            <p>INFORMATION</p>
+                            <ul>
+                                <li><a class="item_link" href="#">Tearms & Condition</a></li>
+                                <li><a class="item_link" href="#">Privacy Policy</a></li>
+                                <li><a class="item_link" href="#">How to Buy</a></li>
+                                <li><a class="item_link" href="#">How to Sell</a></li>
+                                <li><a class="item_link" href="#">Promotion</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_info_item">
+                            <p>SHOP CATEGORY</p>
+                            <ul>
+                                <li><a class="item_link" href="#">Men</a></li>
+                                <li><a class="item_link" href="#">Women</a></li>
+                                <li><a class="item_link" href="#">Child</a></li>
+                                <li><a class="item_link" href="#">Apparel</a></li>
+                                <li><a class="item_link" href="#">Brows All</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+            <div class="copy">
+                <div class="container copy_flex">
+                    <div class="copyright_text">
+                        <p>© 2017  Brand  All Rights Reserved.</p>
+                    </div>
+                    <div class="url">
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#"><i class="fab fa-twitter-square"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-pinterest-square"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
