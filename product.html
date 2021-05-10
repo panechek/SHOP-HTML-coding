@@ -389,7 +389,7 @@
                         <div class="accordion" id="accordionPanelsStayOpenExample">
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                <button class="accordion-button market__title" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                                     Category
                                 </button>
                               </h2>
@@ -415,7 +415,7 @@
                             </div>
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                <button class="accordion-button collapsed market__title" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                                     BRAND
                                 </button>
                               </h2>
@@ -441,14 +441,14 @@
                             </div>
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                <button class="accordion-button collapsed market__title" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                                     dESIGNER
                                 </button>
                               </h2>
                               <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
                                 <div class="accordion-body">
                                     <ul>
-                                        <li><a href="#">Accessories</a></li>
+                                        <li class="market__text"><a href="#" class="market__text">Accessories</a></li>
                                         <li><a href="#">Bags</a></li>
                                         <li><a href="#">Denim</a></li>
                                         <li><a href="#">Hoodies & Sweatshirts</a></li>
@@ -469,10 +469,55 @@
                     </div>
                     <div class="market_content">
                         <div class="market_selection">
-
+                            <div class="select-treding">
+                                <h5 class="market__title">Trending now</h5>
+                                <a class="market__text" href="#">Bohemian</a>|
+                                <a href="#">Floral</a>|
+                                <a href="#">Lace</a>|
+                                <a href="#">Floral</a>|
+                                <a href="#">Lace</a>|
+                                <a href="#">Bohemian</a>
+                            </div>
+                            <div class="select-size">
+                                <legend class="market__title">Trending now</legend>
+                                <label for="sport">
+                                <input id="sport" type="checkbox">XXS</label>
+                                <label for="turist">
+                                <input id="turist" type="checkbox">XS</label>
+                                <label for="sport">
+                                <input id="sport" type="checkbox">S</label>
+                                <label for="sport">
+                                <input id="sport" type="checkbox">M</label>
+                                <label for="sport">
+                                <input id="sport" type="checkbox">L</label>
+                                <label for="sport">
+                                <input id="sport" type="checkbox">XL</label>
+                                <label for="sport">
+                                <input id="sport" type="checkbox">XXL</label>
+                            </div>
+                            <div class="select-price">
+                                <legend class="market__title">pRICE</legend>
+                                <label for="range"></label>
+                                <input id="range" type="range" value="10" step="0.1">
+                            </div>
                         </div>
                         <div class="market_view">
-
+                            <details>
+                                <summary>Browse </summary>
+                                <div class="search">
+                                        <ul>
+                                                <li class="search_link"><a class="item_link" href="product.html">Dresses</a></li>
+                                                <li class="search_link"><a class="item_link" href="product.html">Tops</a></li>
+                                                <li class="search_link"><a class="item_link" href="product.html">Sweaters/Knits</a></li>
+                                                <li class="search_link"><a class="item_link" href="product.html">Jackets/Coats</a></li>
+                                                <li class="search_link"><a class="item_link" href="product.html">Blazers</a></li>
+                                                <li class="search_link"><a class="item_link" href="product.html">Denim</a></li>
+                                                <li class="search_link"><a class="item_link" href="product.html">Leggings/Pants</a></li>
+                                                <li class="search_link"><a class="item_link" href="product.html">Skirts/Shorts</a></li>
+                                                <li class="search_link"><a class="item_link" href="product.html">Accessories </a></li>
+                                        </ul> 
+                                    </div>
+                            </details>
                         </div>
                         <div class="market_place">
                             <div class="product_card">
@@ -584,23 +629,39 @@
                                 </div>
                             </div>
                         </div>
-                        <nav>
-                            <div class="page_nav">
-
+                        <nav class="page_nav">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                      <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                          <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                      </li>
+                                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                          <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </nav>
+                            <div class="product_button_text">
+                                <a href="#" class="productlink">View All</a>
                             </div>
-                            <button></button>
                         </nav>
                     </div>
                 </div>
             </div>
         </article>
-        <div class="feature">
+        <div class="feature" style="background-color: #222224;">
             <div class="container">
-                <div class="feature_flex">
-                        <div class="feature_info_items ">
+                <div class="feature_flex feature_flex-product">
+                        <div class="feature_info_items">
                             <div class="feature_icon product_feature">
-                                <img class="icon_flex" src="images/info_icon1.png" alt="icon">
-                                <div class="feature_text_text">
+                                <img class="icon_flex icon_flex-product" src="images/info_icon1.png" alt="icon">
+                                <div class="feature_text_text feature_text_text-product">
                                     <h3 class="feature_info_title">Free Delivery</h3>
                                 <p class="feature_info_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
                                 </div>
@@ -608,8 +669,8 @@
                         </div>
                         <div class="feature_info_items">
                             <div class="feature_icon product_feature">
-                                <img class="icon_flex" src="images/info_icon2.png" alt="icon">
-                                <div class="feature_text_text">
+                                <img class="icon_flex icon_flex-product" src="images/info_icon2.png" alt="icon">
+                                <div class="feature_text_text feature_text_text-product">
                                     <h3 class="feature_info_title">Sales & discounts</h3>
                                     <p class="feature_info_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
                                 </div>
@@ -617,8 +678,8 @@
                         </div>
                         <div class="feature_info_items">
                             <div class="feature_icon product_feature">
-                                <img class="icon_flex" src="images/info_icon3.png" alt="icon">
-                                <div class="feature_text_text">
+                                <img class="icon_flex icon_flex-product" src="images/info_icon3.png" alt="icon">
+                                <div class="feature_text_text feature_text_text-product">
                                     <h3 class="feature_info_title">Quality assurance</h3>
                                     <p class="feature_info_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
                                 </div>
