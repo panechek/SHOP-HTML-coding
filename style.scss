@@ -1263,6 +1263,7 @@ button:focus {
 
 .market_selection {
     display: flex;
+    justify-content: space-between;
 }
 
 .market_view {
@@ -1334,4 +1335,52 @@ button:focus {
     font-family: "Lato";
     font-size: 14px;
     font-weight: 400;
+}
+
+.search-market {
+    padding: 10px;
+}
+
+.market__text__view {
+    padding: 8px;
+    border: 1px solid #ebebeb;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-right: 0;
+}
+
+.details__market {
+    border-radius: 0;
+    margin-right: 10px;
+}
+
+.market_view_width {
+    width: 87px;
+    border-radius: 0%;
+}
+
+.market_view_ul {
+    padding: 0;
+    margin: 0;
+}
+
+.select-trending ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    width: 176px;
+}
+
+.select-trending,
+.select-size,
+.select-price {
+    width: 262px;
+}
+
+.select-size-link {
+    margin-right: 23px;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    color: #6f6e6e;
 }
