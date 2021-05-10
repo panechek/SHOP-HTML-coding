@@ -384,9 +384,9 @@
         </div>
         <article>
             <div class="container">
-                <div class="market">
+                <div class="market" style="z-index: -2;">
                     <div class="category">
-                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion" style="z-index: -2;" id="accordionPanelsStayOpenExample">
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                                 <button class="accordion-button market__title" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
@@ -469,52 +469,60 @@
                     </div>
                     <div class="market_content">
                         <div class="market_selection">
-                            <div class="select-treding">
+                            <div class="select-trending">
                                 <h5 class="market__title">Trending now</h5>
-                                <a class="market__text" href="#">Bohemian</a>|
-                                <a href="#">Floral</a>|
-                                <a href="#">Lace</a>|
-                                <a href="#">Floral</a>|
-                                <a href="#">Lace</a>|
-                                <a href="#">Bohemian</a>
+                                <ul>
+                                    <li><a class="market__text" href="#">Bohemian</a> |</li>
+                                    <li><a class="market__text" href="#">Floral</a> |</li>
+                                    <li><a class="market__text" href="#">Lace</a> |</li>
+                                    <li><a class="market__text" href="#">Floral</a> |</li>
+                                    <li><a class="market__text" href="#">Lace</a> |</li>
+                                    <li><a class="market__text" href="#">Bohemian</a></li>
+                                </ul>
                             </div>
                             <div class="select-size">
                                 <legend class="market__title">Trending now</legend>
-                                <label for="sport">
-                                <input id="sport" type="checkbox">XXS</label>
-                                <label for="turist">
-                                <input id="turist" type="checkbox">XS</label>
-                                <label for="sport">
-                                <input id="sport" type="checkbox">S</label>
-                                <label for="sport">
-                                <input id="sport" type="checkbox">M</label>
-                                <label for="sport">
-                                <input id="sport" type="checkbox">L</label>
-                                <label for="sport">
-                                <input id="sport" type="checkbox">XL</label>
-                                <label for="sport">
-                                <input id="sport" type="checkbox">XXL</label>
+                                <label class="select-size-link" for="XXS">
+                                <input style="margin-right: 9px;" id="XXS" type="checkbox">XXS</label>
+                                <label class="select-size-link" for="XS">
+                                <input style="margin-right: 9px;" id="XS" type="checkbox">XS</label>
+                                <label class="select-size-link" for="S">
+                                <input style="margin-right: 9px;" id="S" type="checkbox">S</label>
+                                <label class="select-size-link" for="M">
+                                <input style="margin-right: 9px;" id="M" type="checkbox">M</label>
+                                <label class="select-size-link" for="L">
+                                <input style="margin-right: 9px;" id="L" type="checkbox">L</label>
+                                <label class="select-size-link" for="XL">
+                                <input style="margin-right: 9px;" id="XL" type="checkbox">XL</label>
+                                <label class="select-size-link" for="XXL">
+                                <input style="margin-right: 9px;" id="XXL" type="checkbox">XXL</label>
                             </div>
                             <div class="select-price">
                                 <legend class="market__title">pRICE</legend>
-                                <label for="range"></label>
-                                <input id="range" type="range" value="10" step="0.1">
+                                <label for="range" style="color: #f16d7f;"></label>
+                                <input id="range" type="range" min="0" max="11" value="10" step="0.1" style="width: 262px; background-color: #f16d7f;">
                             </div>
                         </div>
-                        <div class="market_view">
-                            <details>
-                                <summary>Browse </summary>
-                                <div class="search">
-                                        <ul>
-                                                <li class="search_link"><a class="item_link" href="product.html">Dresses</a></li>
-                                                <li class="search_link"><a class="item_link" href="product.html">Tops</a></li>
-                                                <li class="search_link"><a class="item_link" href="product.html">Sweaters/Knits</a></li>
-                                                <li class="search_link"><a class="item_link" href="product.html">Jackets/Coats</a></li>
-                                                <li class="search_link"><a class="item_link" href="product.html">Blazers</a></li>
-                                                <li class="search_link"><a class="item_link" href="product.html">Denim</a></li>
-                                                <li class="search_link"><a class="item_link" href="product.html">Leggings/Pants</a></li>
-                                                <li class="search_link"><a class="item_link" href="product.html">Skirts/Shorts</a></li>
-                                                <li class="search_link"><a class="item_link" href="product.html">Accessories </a></li>
+                        <div class="market_view search-market">
+                            <p class="market__text market__text__view">Sort By</p>
+                            <details class="details__market">
+                                <summary>Name</summary>
+                                <div class="search market_view_width">
+                                        <ul class="market_view_ul">
+                                                <li>Name</li>
+                                                <li>Name</li>
+                                                <li>Name</li>
+                                        </ul> 
+                                    </div>
+                            </details>
+                            <p class="market__text market__text__view">Show</p>
+                            <details class="details__market">
+                                <summary>09 </summary>
+                                <div class="search market_view_width">
+                                        <ul class="market_view_ul">
+                                                <li>09</li>
+                                                <li>18</li>
+                                                <li>36</li>
                                         </ul> 
                                     </div>
                             </details>
