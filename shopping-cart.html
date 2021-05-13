@@ -177,7 +177,7 @@
                            </div> 
                         </div>
                     </li>
-                    <li class="nav_list"><a class="nav_link" href="#">Women</a>
+                    <li class="nav_list" style="border-bottom: 3px solid #f16d7f;"><a class="nav_link" href="#">Women</a>
                         <div class="nav-box">
                             <div class="item_flex">
                                 <h3 class="item_heading">Women</h3>
@@ -489,15 +489,32 @@
                     </div>
                     <form action="#">
                         <div class="shopping-cart_form">
-                            <section class="shopping-cart_form__adress">
-                                <p>Shipping Adress</p>
-
-                            </section>
-                            <section class="shopping-cart_form__coupon">
-                                <p>coupon  discount</p>
-                            </section>
+                            <form action="#"></form>
+                                <section class="shopping-cart_form__adress">
+                                    <p>Shipping Adress</p>
+                                    <input class="shopping-cart_form__coupon_input" id="Adress" list="dl_Adress" placeholder="Bangladesh">
+                                    <datalist id="dl_Adress">
+                                    <option label="Bangladesh" value="Bangladesh">Bangladesh</option>
+                                    <option label="Bangladesh" value="Bangladesh"></option>
+                                    <option label="Bangladesh" value="Bangladesh"></option>
+                                    </datalist>
+                                    <input class="shopping-cart_form__coupon_input" type="text" placeholder="State">
+                                    <input class="shopping-cart_form__coupon_input" type="text" placeholder="Postcode / Zip">
+                                    <button class="shopping-cart__coupon_button" type="submit">get a quote</button>
+                                </section>
+                            </form>
+                            <form action="#">
+                                <section class="shopping-cart_form__coupon">
+                                    <p>coupon  discount</p>
+                                    <p class="shopping-cart_form__coupon_txt">Enter your coupon code if you have one</p>
+                                    <input class="shopping-cart_form__coupon_input" type="text" id="coupon" placeholder="State">
+                                    <button class="shopping-cart__coupon_button" type="submit">Apply coupon</button>
+                                </section>
+                            </form>
                             <section class="shopping-cart_form__button">
-
+                                <p class="shopping-cart__button_txt">Sub total<span>$900</span></p>
+                                <p class="shopping-cart__button_txt_black" >GRAND TOTAL<span>$900</span></p>
+                                <button class="shopping-cart__button" type="submit">proceed to checkout</button>
                             </section>
                         </div>
                     </form>
